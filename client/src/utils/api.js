@@ -19,7 +19,7 @@ async function request(path, options = {}) {
       },
     });
   } catch (error) {
-    throw new Error("Unable to reach the server. Check that the backend is running.");
+    throw new Error("Unable to reach the server. Please try again in a moment.");
   }
 
   const contentType = response.headers.get("content-type") || "";
